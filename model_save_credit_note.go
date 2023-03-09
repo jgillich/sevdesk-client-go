@@ -36,11 +36,11 @@ type SaveCreditNote struct {
 func NewSaveCreditNote(creditNote ModelCreditNote) *SaveCreditNote {
 	this := SaveCreditNote{}
 	this.CreditNote = creditNote
-	var creditNotePosDelete SaveCreditNoteCreditNotePosDelete = null
+	var creditNotePosDelete SaveCreditNoteCreditNotePosDelete
 	this.CreditNotePosDelete = &creditNotePosDelete
-	var discountSave SaveCreditNoteDiscountSave = null
+	var discountSave SaveCreditNoteDiscountSave
 	this.DiscountSave = &discountSave
-	var discountDelete SaveCreditNoteDiscountDelete = null
+	var discountDelete SaveCreditNoteDiscountDelete
 	this.DiscountDelete = &discountDelete
 	return &this
 }
@@ -50,11 +50,11 @@ func NewSaveCreditNote(creditNote ModelCreditNote) *SaveCreditNote {
 // but it doesn't guarantee that properties required by API are set
 func NewSaveCreditNoteWithDefaults() *SaveCreditNote {
 	this := SaveCreditNote{}
-	var creditNotePosDelete SaveCreditNoteCreditNotePosDelete = null
+	var creditNotePosDelete SaveCreditNoteCreditNotePosDelete
 	this.CreditNotePosDelete = &creditNotePosDelete
-	var discountSave SaveCreditNoteDiscountSave = null
+	var discountSave SaveCreditNoteDiscountSave
 	this.DiscountSave = &discountSave
-	var discountDelete SaveCreditNoteDiscountDelete = null
+	var discountDelete SaveCreditNoteDiscountDelete
 	this.DiscountDelete = &discountDelete
 	return &this
 }

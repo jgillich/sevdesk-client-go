@@ -34,7 +34,7 @@ type SaveVoucher struct {
 func NewSaveVoucher(voucher ModelVoucher) *SaveVoucher {
 	this := SaveVoucher{}
 	this.Voucher = voucher
-	var voucherPosDelete SaveVoucherVoucherPosDelete = null
+	var voucherPosDelete SaveVoucherVoucherPosDelete
 	this.VoucherPosDelete = &voucherPosDelete
 	return &this
 }
@@ -44,7 +44,7 @@ func NewSaveVoucher(voucher ModelVoucher) *SaveVoucher {
 // but it doesn't guarantee that properties required by API are set
 func NewSaveVoucherWithDefaults() *SaveVoucher {
 	this := SaveVoucher{}
-	var voucherPosDelete SaveVoucherVoucherPosDelete = null
+	var voucherPosDelete SaveVoucherVoucherPosDelete
 	this.VoucherPosDelete = &voucherPosDelete
 	return &this
 }

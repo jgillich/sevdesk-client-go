@@ -36,7 +36,7 @@ type SaveInvoice struct {
 func NewSaveInvoice(invoice ModelInvoice) *SaveInvoice {
 	this := SaveInvoice{}
 	this.Invoice = invoice
-	var invoicePosDelete SaveInvoiceInvoicePosDelete = null
+	var invoicePosDelete SaveInvoiceInvoicePosDelete
 	this.InvoicePosDelete = &invoicePosDelete
 	return &this
 }
@@ -46,7 +46,7 @@ func NewSaveInvoice(invoice ModelInvoice) *SaveInvoice {
 // but it doesn't guarantee that properties required by API are set
 func NewSaveInvoiceWithDefaults() *SaveInvoice {
 	this := SaveInvoice{}
-	var invoicePosDelete SaveInvoiceInvoicePosDelete = null
+	var invoicePosDelete SaveInvoiceInvoicePosDelete
 	this.InvoicePosDelete = &invoicePosDelete
 	return &this
 }

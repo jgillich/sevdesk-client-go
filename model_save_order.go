@@ -31,7 +31,7 @@ type SaveOrder struct {
 func NewSaveOrder(order ModelOrder) *SaveOrder {
 	this := SaveOrder{}
 	this.Order = order
-	var orderPosDelete SaveOrderOrderPosDelete = null
+	var orderPosDelete SaveOrderOrderPosDelete
 	this.OrderPosDelete = &orderPosDelete
 	return &this
 }
@@ -41,7 +41,7 @@ func NewSaveOrder(order ModelOrder) *SaveOrder {
 // but it doesn't guarantee that properties required by API are set
 func NewSaveOrderWithDefaults() *SaveOrder {
 	this := SaveOrder{}
-	var orderPosDelete SaveOrderOrderPosDelete = null
+	var orderPosDelete SaveOrderOrderPosDelete
 	this.OrderPosDelete = &orderPosDelete
 	return &this
 }
